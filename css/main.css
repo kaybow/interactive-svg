@@ -16,19 +16,19 @@ html {
   box-sizing: inherit;
 }
 
-.st0, .st1, .right-eye, .left-eye {
-  position: absolute;
-}
-
-.bear {
-  postion: relative;
-}
-
-.right-eye {
+#right-ear {
 
 }
 
-.left-eye {
+#left-ear {
+
+}
+
+#right-eye {
+
+}
+
+#left-eye {
 
 }
 
