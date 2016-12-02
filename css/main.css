@@ -16,21 +16,58 @@ html {
   box-sizing: inherit;
 }
 
-#right-ear {
-
+.st0 {
+  fill: #673200;
 }
 
-#left-ear {
-
+.st1 {
+  fill: #ffaaca;
 }
 
-#right-eye {
-
+.st2 {
+  fill: #c65b00;
 }
 
-#left-eye {
-
+.st3 {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
 }
 
+.eye {
+  animation: moveeyes 5s linear infinite;
+}
 
+@keyframes moveeyes {
 
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(15px, 0);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  75% {
+    transform: translate(-15px, 0);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.rightear, .leftear {
+  transition: transform 0.25s linear;
+}
+
+.bear:hover .rightear, .bear:hover .leftear {
+  transform: translate(0, -12px);
+}
